@@ -8,6 +8,49 @@
     <title>Task list</title>
 </head>
 <body>
+    <main class="task-list">
+        <section class="task-name">
+            <h1 class="task-name__headline headline">Task name</h1>
+            <input type="text" class="task-name__textarea textarea" placeholder="Enter task name">
+        </section>
+        <section class="subtasks">
+            <div class="subtasks__caption">
+                <h2 class="subtasks__headline headline">Subtasks</h2>
+                <button class="subtasks__button button"></button>
+            </div>
+            <div class="subtasks__task-wrapper">
+                <div class="subtasks__des">
+                    <p class="subtasks__name des">Description</p>
+                    <p class="subtasks__name time">Time</p>
+                    <p class="subtasks__name btn">Button</p>
+                </div>
+                <div class="subtasks__task">
+                    <input type="text" class="subtasks__textarea textarea" placeholder="New task">
+                    <input type="number" class="subtasks__time" value="0">
+                    <button class="subtasks__button button"></button>
+                </div>
+            </div>
+        </section>
+        <section class="tasks-buttons">
+            <button class="task-buttons__btn save-btn">Save task in localstorage</button>
+            <button class="task-buttons__btn create-btn">Create new task</button>
+        </section>
+        <section class="all-task">
+            <h2 class="all-task__headline headline">Task list</h2>
+            <div class="all-task__task">
+                <img src="" alt="" class="all-task__avatar">
+                <div class="all-task__task-des">
+                    <p class="all-task__headline">Task name</p>
+                    <ul class="all-task__list">
+                        <li class="all-task__item">New task - 20h</li>
+                        <li class="all-task__item">New task - 20h</li>
+                        <li class="all-task__item">New task - 20h</li>
+                    </ul>
+                </div>
+                <button class="all-task__button">Load</button>
+            </div>
+        </section>
+    </main>
     <script src="./script.js"></script>
 </body>
 </html>
