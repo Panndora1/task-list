@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-list {
+    width: 100%;
+    max-width: 664px;
+    padding: 50px 40px;
+}
+
+/* Task name */
+
+.task-name {
+    width: 100%;
+    max-width: 664px;
+}
+
+.task-name__headline {
+    padding-bottom: 32px;    
+}
+
+.headline {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    align-items: center;
+    letter-spacing: -0.015em;
+    color: #000000;
+}
+
+.task-name__textarea {
+    width: 100%;
+    max-width: 660px;
+}
+
+.textarea {
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 0px;
+    padding: 17px;
+}
+
+input[placeholder],
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-moz-placeholder ,
+:-ms-input-placeholder  {
+    color: #000000;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+/* Subtasks */
+
+.subtasks {
+    width: 100%;
+    max-width: 664px;
+    padding-top: 32px;
+}
+
+.subtasks__caption {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.subtasks__headline {
+    padding-bottom: 20px;
+}
+
+.subtasks__button {
+    background: #000000;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.button {
+    width: 70px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.subtasks__task-wrapper {
+    width: 100%;
+    max-width: 664px;
+}
+
+.subtasks__des {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.subtasks__name {
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.des {
+    width: 100%;
+    max-width: 473px;
+}
+
+.time {
+    width: 100%;
+    max-width: 77px;
+}
+
+.btn {
+    width: 100%;
+    max-width: 70px;
+}
+
+.subtasks__task {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 22px;
+}
+
+.subtasks__textarea {
+    width: 100%;
+    max-width: 473px;
+}
+
+.subtasks__time {
+    width: 100%;
+    max-width: 77px;
+}
+
+.subtasks__button-del {
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    font-weight: 700;
+}
+
+/* Buttons */
+
+.tasks-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 100%;
+    max-width: 664px;
+    padding-bottom: 32px;
+}
+
+.task-buttons__btn {
+    width: 100%;
+    max-width: 666px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    padding-top: 19px;
+    padding-bottom: 18px;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.04em;
+}
+
+.save-btn {
+    color: #000000;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+}
+
+.create-btn {
+    color: #FFFFFF;
+    background: #000000;
+    border: 2px solid #000000;
+}
+
+/* All task */
+
+.all-task {
+    width: 100%;
+    max-width: 664px;
+}
+
+.all-task__headline {
+    padding-bottom: 32px;
+    display: none;
+}
+
+.all-task__task {
+    width: 100%;
+    max-width: 664px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 20px 0;
+}
+
+.all-task__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+
+.all-task__avatar {
+    display: block;
+    width: 64px;
+    height: 64px;
+    background-color: #121111;
+    border-radius: 50px;
+    align-self: start;
+}
+
+.all-task__task-des {
+    align-self: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.all-task__list {
+    list-style: inside;
+    padding-top: 6px;
+}
+
+.all-task__item {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    margin-left: 6px;
+}
+
+.all-task__button {
+    width: 100%;
+    max-width: 124px;
+    padding: 7px 0;
+    align-self: flex-end;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    cursor: pointer;
+}
